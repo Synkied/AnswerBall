@@ -8,12 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		684A4B2B1C5AAFD800E76F79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A4B2A1C5AAFD800E76F79 /* AppDelegate.swift */; };
-		684A4B2D1C5AAFD800E76F79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A4B2C1C5AAFD800E76F79 /* ViewController.swift */; };
 		684A4B301C5AAFD800E76F79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A4B2E1C5AAFD800E76F79 /* Main.storyboard */; };
 		684A4B321C5AAFD800E76F79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 684A4B311C5AAFD800E76F79 /* Assets.xcassets */; };
 		684A4B351C5AAFD800E76F79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 684A4B331C5AAFD800E76F79 /* LaunchScreen.storyboard */; };
 		684A4B401C5AAFD900E76F79 /* AnswerBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A4B3F1C5AAFD900E76F79 /* AnswerBallTests.swift */; };
 		684A4B4B1C5AAFD900E76F79 /* AnswerBallUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A4B4A1C5AAFD900E76F79 /* AnswerBallUITests.swift */; };
+		684A4B591C5AB0F300E76F79 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 684A4B581C5AB0F300E76F79 /* MainViewController.swift */; };
+		687257281C5FF5A500CE82BB /* shakesound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 687257271C5FF5A500CE82BB /* shakesound.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,6 @@
 /* Begin PBXFileReference section */
 		684A4B271C5AAFD800E76F79 /* AnswerBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnswerBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A4B2A1C5AAFD800E76F79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		684A4B2C1C5AAFD800E76F79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		684A4B2F1C5AAFD800E76F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		684A4B311C5AAFD800E76F79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		684A4B341C5AAFD800E76F79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +47,8 @@
 		684A4B461C5AAFD900E76F79 /* AnswerBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnswerBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		684A4B4A1C5AAFD900E76F79 /* AnswerBallUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnswerBallUITests.swift; sourceTree = "<group>"; };
 		684A4B4C1C5AAFD900E76F79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		684A4B581C5AB0F300E76F79 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		687257271C5FF5A500CE82BB /* shakesound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shakesound.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +100,12 @@
 			isa = PBXGroup;
 			children = (
 				684A4B2A1C5AAFD800E76F79 /* AppDelegate.swift */,
-				684A4B2C1C5AAFD800E76F79 /* ViewController.swift */,
 				684A4B2E1C5AAFD800E76F79 /* Main.storyboard */,
+				684A4B581C5AB0F300E76F79 /* MainViewController.swift */,
 				684A4B311C5AAFD800E76F79 /* Assets.xcassets */,
 				684A4B331C5AAFD800E76F79 /* LaunchScreen.storyboard */,
 				684A4B361C5AAFD800E76F79 /* Info.plist */,
+				687257271C5FF5A500CE82BB /* shakesound.wav */,
 			);
 			path = AnswerBall;
 			sourceTree = "<group>";
@@ -235,6 +238,7 @@
 				684A4B351C5AAFD800E76F79 /* LaunchScreen.storyboard in Resources */,
 				684A4B321C5AAFD800E76F79 /* Assets.xcassets in Resources */,
 				684A4B301C5AAFD800E76F79 /* Main.storyboard in Resources */,
+				687257281C5FF5A500CE82BB /* shakesound.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +263,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				684A4B2D1C5AAFD800E76F79 /* ViewController.swift in Sources */,
 				684A4B2B1C5AAFD800E76F79 /* AppDelegate.swift in Sources */,
+				684A4B591C5AB0F300E76F79 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,6 +491,7 @@
 				684A4B511C5AAFD900E76F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684A4B521C5AAFD900E76F79 /* Build configuration list for PBXNativeTarget "AnswerBallTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +500,7 @@
 				684A4B541C5AAFD900E76F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		684A4B551C5AAFD900E76F79 /* Build configuration list for PBXNativeTarget "AnswerBallUITests" */ = {
 			isa = XCConfigurationList;
@@ -503,6 +509,7 @@
 				684A4B571C5AAFD900E76F79 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
