@@ -17,44 +17,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4JStimbhSdORq21OeBAa_2015-08-10_20-01-19__ball" translatesAutoresizingMaskIntoConstraints="NO" id="lpQ-l3-2Ny">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CrystalBall 2" translatesAutoresizingMaskIntoConstraints="NO" id="TnV-bc-8g8">
                                 <rect key="frame" x="128" y="127" width="345" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="345" id="Cnf-9v-JUu"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="345" id="cAt-kE-248"/>
+                                    <constraint firstAttribute="width" constant="345" id="tL7-Yl-8KG"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbU-ub-Mfv">
                                 <rect key="frame" x="230" y="550" width="141" height="30"/>
+                                <color key="backgroundColor" red="0.24493921213319464" green="0.29037959787858758" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="141" id="M6b-oG-rdG"/>
+                                    <constraint firstAttribute="width" constant="141" id="vaL-Ou-O9v"/>
+                                    <constraint firstAttribute="height" constant="30" id="y0r-Q3-Nua"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <state key="normal" title="Get Answer">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="getAnswerTapped:" destination="JwR-mU-Bx1" eventType="touchUpInside" id="I5U-u6-J3A"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sCZ-Wp-2zD">
-                                <rect key="frame" x="167" y="284" width="267" height="32"/>
+                                <rect key="frame" x="165" y="202" width="270" height="195"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="267" id="oNe-xg-gsY"/>
+                                    <constraint firstAttribute="width" constant="270" id="Oqa-gH-B2H"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="270" id="WEj-JK-DsY"/>
+                                    <constraint firstAttribute="height" constant="195" id="m3k-xU-ALK"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="32"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
-                                <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="shadowColor" red="0.78730366492146597" green="0.78730366492146597" blue="0.78730366492146597" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="2" height="2"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.0" blue="0.44579741379310345" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.41528594387059714" green="0.44983540343526102" blue="0.67201816099476441" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="GbU-ub-Mfv" secondAttribute="bottom" constant="20" symbolic="YES" id="77b-rV-Eva"/>
-                            <constraint firstItem="lpQ-l3-2Ny" firstAttribute="centerX" secondItem="k6W-kz-8FY" secondAttribute="centerX" id="GUO-m4-Ww5"/>
-                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerX" secondItem="lpQ-l3-2Ny" secondAttribute="centerX" id="Mfg-ap-9qK"/>
-                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="top" secondItem="5w8-9Q-9TN" secondAttribute="bottom" constant="220" id="Wvo-fa-fri"/>
-                            <constraint firstItem="lpQ-l3-2Ny" firstAttribute="centerY" secondItem="k6W-kz-8FY" secondAttribute="centerY" id="Y8L-vq-Jxr"/>
-                            <constraint firstItem="GbU-ub-Mfv" firstAttribute="centerX" secondItem="sCZ-Wp-2zD" secondAttribute="centerX" id="clu-Qh-daS"/>
-                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerY" secondItem="lpQ-l3-2Ny" secondAttribute="centerY" id="e55-69-X6A"/>
-                            <constraint firstItem="GbU-ub-Mfv" firstAttribute="top" secondItem="lpQ-l3-2Ny" secondAttribute="bottom" constant="78" id="lo3-Yk-rDb"/>
+                            <constraint firstItem="GbU-ub-Mfv" firstAttribute="centerX" secondItem="sCZ-Wp-2zD" secondAttribute="centerX" id="Emr-Ie-fYJ"/>
+                            <constraint firstItem="TnV-bc-8g8" firstAttribute="centerX" secondItem="k6W-kz-8FY" secondAttribute="centerX" id="LUg-tM-GMq"/>
+                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerY" secondItem="k6W-kz-8FY" secondAttribute="centerY" id="cs5-cv-yNU"/>
+                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerX" secondItem="k6W-kz-8FY" secondAttribute="centerX" id="lJO-dR-DRL"/>
+                            <constraint firstAttribute="bottom" secondItem="GbU-ub-Mfv" secondAttribute="bottom" constant="20" symbolic="YES" id="lNk-Yi-QIl"/>
+                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerY" secondItem="TnV-bc-8g8" secondAttribute="centerY" id="qOQ-D5-PKm"/>
+                            <constraint firstItem="sCZ-Wp-2zD" firstAttribute="centerX" secondItem="TnV-bc-8g8" secondAttribute="centerX" id="wMF-eU-30a"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Shake for Answer" id="TGu-PC-Txc"/>
+                    <connections>
+                        <outlet property="labelQuestion" destination="sCZ-Wp-2zD" id="Vhi-ho-Se0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gbw-gn-sDD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -80,6 +93,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="4JStimbhSdORq21OeBAa_2015-08-10_20-01-19__ball" width="345" height="345"/>
+        <image name="CrystalBall 2" width="2480" height="2480"/>
     </resources>
 </document>
